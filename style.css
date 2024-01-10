@@ -1,0 +1,717 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-color: lightgray;
+}
+
+:root {
+  --text-color: #000;
+  --text-white-color: #fff;
+  --yellow-color: #fbe831;
+  --footer-color: #1e1e1e;
+}
+
+.container {
+  max-width: 1171px;
+  margin: auto;
+}
+
+nav, .sectionOne, .secTwoNavBar, .secTwoContact, .secTwoMenuList, .secTwoImgContainer, .box1,
+.secThreeImageContainer, .secFourBoxContainer, .fourBox1Inside, .fourBox2Inside, .fourBox3,
+.secFiveBoxContainer, .secFiveBox1, .secFiveBox2, .secFiveBox3, .secSixContact, .secSixForm,
+.secSixFootOne, .secSixFootTwo, .sectionFooter
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  margin-top: 20px;
+}
+
+nav .logo img{
+  width: 200px;
+  margin-left: -15px;
+}
+
+nav .menuList a span {
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.hamburgerLogo {
+  display: none;
+}
+
+nav .hamburgerLogo i, .secTwoHamburger {
+  font-size: 40px;
+}
+
+h1 {
+  font-size: 43px;
+}
+
+button {
+  width: 181px;
+  height: 50px;
+  background-color: var(--yellow-color);
+  cursor: pointer;
+}
+
+/* ----------------section One-------------- */
+.sectionOne {
+  margin-top: 156px;
+}
+
+.sectionOne button {
+  margin-top: 127px;
+}
+
+.sectionOne .secOneRight img {
+  width: 569px;
+  height: 541px;
+}
+
+/* ----------------section Two-------------- */
+.sectionTwo {
+  margin-top: 129px;
+}
+
+.sectionTwo h1 {
+  margin-bottom: 75px;
+}
+
+.secTwoNavBar {
+  width: 100%;
+  /* overflow-y: hidden; */
+}
+
+.sectionTwo nav .secTwoHamburger {
+  display: none;
+}
+
+.showSecTwoMenuList {
+  transform: translateX(0);
+}
+
+.secTwoNavBar div, a {
+  cursor: pointer;
+  padding: 15px 30px;
+  /* background-color: var(--yellow-color); */
+  color: var(--text-color);
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.secTwo_V {
+  cursor: pointer;
+  position: relative;
+}
+
+.secTwoBoxMenu {
+  padding: 10px 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.secTwoBoxMenu a {
+  display: block;
+  background-color: var(--text-white-color);
+  padding: 10px;
+  transform: translateY(-300%);
+  transition: all .4s ease-in-out;
+}
+
+.showSecTwoBox a {
+  transform: translateY(0);
+}
+
+.selectColor {
+  background-color: var(--yellow-color);
+}
+
+.hide {
+  display: none;
+}
+
+.secTwoImgContainer {
+  width: 1169px;
+  height: 827px;
+  margin-top: 68px;
+  margin-bottom: 68px;
+  display: flex;
+  justify-content: center;
+}
+
+.secTwoImgContainer div img {
+  width: 100%;
+  height: 100%;
+}
+
+.secTwoContact .secTwoImgContainer .boxCol1 .box1 {
+  width: 370px;
+  height: 300px;
+  background-color: var(--yellow-color);
+  /* margin-bottom: 28px; */
+  margin: 18px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Help/night-lights-tower-home-wallpaper-preview.jpg");
+  background-position: center;
+}
+
+.secTwoContact .secTwoImgContainer .boxCol1 .box1 h2 {
+  color: var(--yellow-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.secTwoContact .secTwoImgContainer .boxCol1 .box1 span {
+  color: var(--yellow-color);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.secTwoContact .secTwoImgContainer .boxCol1 .box2 {
+  width: 370px;
+  height: 499px;
+  background-color: darkgray;
+  margin: 18px;
+}
+
+.secTwoContact .secTwoImgContainer .boxCol2 .box1 {
+  width: 370px;
+  height: 499px;
+  background-color: darkgray;
+  /* margin-bottom: 28px; */
+  margin: 18px;
+}
+
+.secTwoContact .secTwoImgContainer .boxCol2 .box2 {
+  width: 370px;
+  height: 300px;
+  background-color: var(--yellow-color);
+  margin: 18px;
+}
+
+.secTwoContact .secTwoImgContainer .boxCol3 .box1 {
+  width: 370px;
+  height: 300px;
+  background-color: var(--yellow-color);
+  /* margin-bottom: 28px; */
+  margin: 18px;
+}
+
+.secTwoContact .secTwoImgContainer .boxCol3 .box2 {
+  width: 370px;
+  height: 499px;
+  background-color: darkgray;
+  margin: 18px;
+}
+
+.sectionTwo button {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secTwoContact {
+  flex-direction: column;
+}
+
+/* ----------------section Three-------------- */
+.secThreeImageContainer {
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+.secThreeImageContainer img {
+  width: 110px;
+}
+
+/* ----------------section Four-------------- */
+.sectionFour {
+  margin-bottom: 120px;
+}
+
+.secFourBoxContainer {
+  flex-wrap: wrap;
+  margin-top: 160px;
+}
+
+.secFourBoxContainer div {
+  width: 360px;
+  height: 370px;
+  background-color: var(--footer-color);
+}
+
+.fourBox1, .fourBox2 {
+  position: relative;
+}
+
+.fourBox1 p, .fourBox2 p {
+  text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.fourBox2, .fourBox1 {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/HFUAjfbamNhbM8dsNSQW3D-1200-80.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.fourBox1 {
+  background-image: url("https://www.austintec.com/wp-content/uploads/2023/11/4-Reasons-to-Relocate-for-an-Engineering-Job-768x513.jpg");
+}
+
+.secFourBoxContainer .fourBox1Inside, .fourBox2 .fourBox2Inside {
+  position: absolute;
+  bottom: 0;
+  line-height: 22px;
+  width: 240px;
+  height: 65px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7px 10px;
+  background-color: var(--yellow-color);
+}
+
+.secFourBoxContainer .fourBox1Inside p, .fourBox2 .fourBox2Inside p {
+  color: var(--text-white-color);
+}
+
+.secFourBoxContainer .fourBox3 {
+  background-color: var(--text-white-color);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 0;
+  padding-left: 55px;
+}
+
+.secFourBoxContainer .fourBox3 a {
+  padding: 0;
+}
+
+/* ----------------section Five-------------- */
+.sectionFive {
+  padding-bottom: 117px;
+}
+
+.sectionFive h1 {
+  margin-top: 127px;
+  margin-bottom: 170px;
+}
+
+.secFiveBoxContainer {
+  flex-wrap: wrap;
+}
+
+.secFiveBoxContainer div {
+  width: 369px;
+  height: 460px;
+  margin: auto;
+  background-color: var(--text-white-color);
+  position: relative;
+}
+
+.secFiveBox1, .secFiveBox2, .secFiveBox3 {
+  align-items: flex-start;
+}
+
+
+.secFiveBox1 span:nth-child(1), .secFiveBox2 span:nth-child(1), .secFiveBox3 span:nth-child(1) {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow-color);
+}
+
+.secFiveBox2 span:nth-child(1), .secFiveBox3 span:nth-child(1) {
+  background-color: lightcyan;
+}
+
+.secFiveBox1 span:nth-child(2), .secFiveBox2 span:nth-child(2), .secFiveBox3 span:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  padding-top: 33px;
+  padding-bottom: 25px;
+  padding-left: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ----------------section Six-------------- */
+.sectionSix h1 {
+  margin-bottom: 183px;
+}
+
+.secSixContact {
+  margin-bottom: 70px;
+}
+
+.secSixContact .secSixForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.secSixContact .secSixForm form h2 {
+  color: var(--footer-color)
+}
+
+.secSixContact .secSixForm form input {
+  width: 570px;
+  height: 45px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+}
+
+.secSixContact .secSixForm form textarea {
+  width: 570px;
+  height: 135px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.secSixImage {
+  width: 570px;
+  height: 470px;
+  background-color: gray;
+}
+
+.secSixImage img {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.dribbble.com/users/6157458/screenshots/16726772/media/8be87221d2eb767246c7b8b37b668a4b.jpg?resize=400x300&vertical=center");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+}
+
+.secSixFootOne {
+  justify-content: space-evenly;
+  margin-bottom: 77px;
+}
+
+.secSixFootOne div {
+  text-align: center;
+}
+
+.secSixFootOne div i {
+  font-size: 23px;
+  margin-bottom: 31px;
+  color: var(--text-color);
+}
+
+.secSixFootOne div p {
+  margin-bottom: 4px;
+}
+
+.secSixFootTwo {
+  justify-content: space-evenly;
+}
+
+.secSixFootTwo i {
+  margin: 30px;
+  font-size: 30px;
+}
+
+/* ----------------section Footer-------------- */
+.sectionFooter {
+  width: 100%;
+  height: 180px;
+  justify-content: space-around;
+  background-color: var(--text-color);
+}
+
+.secFootLeft, .secFootRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secFootLeft img {
+  width: 92px;
+  margin-right: 32px;
+}
+
+.secFootLeft p {
+  color: var(--text-white-color);
+}
+
+.secFootRight h3 {
+  margin-right: 18px;
+}
+
+.secFootRight i, h3 {
+  color: var(--text-white-color);
+  display: inline;
+}
+
+/* -------------------------------@@@@@@-------------------------- */
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 100px;
+  }
+  .sectionTwo .secTwoImgContainer {
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+  }
+  .sectionTwo .secTwoImgContainer .boxCol3 {
+    margin: 28px auto;
+  }
+  .secFourBoxContainer {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .secFourBoxContainer div {
+    margin: 15px;
+  }
+  .secFiveBoxContainer div {
+    margin-bottom: 20px;
+  }
+  .secSixContact {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .secSixContact .secSixForm form {
+    display: flex;
+    align-items: center;
+  }
+  .secSixForm {
+    margin: 20px;
+  }
+  .secSixContact .secSixForm form input, .secSixContact .secSixForm form textarea {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1097px) {
+  .menuList {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    transform: translateY(-100%);
+    transition: all .4s ease-in-out;
+  }
+  .menuList a span {
+    color: var(--text-white-color);
+  }
+  .hamburgerLogo {
+    display: block;
+    z-index: 100;
+  }
+}
+
+/* -----------ShowMenuList---------------- */
+.showMenuList {
+  transform: translateY(0);
+  margin: auto;
+}
+/* --------------ShowMenuList--------------*/
+
+@media (max-width: 960px) {
+  .sectionOne .secOneLeft {
+    padding: 0 10px;
+  }
+  .sectionTwo .secTwoImgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .secFiveBoxContainer {
+    justify-content: center;
+    margin-top: -150px;
+  }
+  .secFiveBoxContainer div {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 939px) {
+  .sectionTwo .secTwoNavBar {
+    position: relative;
+  }
+  .sectionTwo .secTwoImgContainer .boxCol1 .box2 {
+    margin-bottom: 28px;
+  }
+  .sectionTwo .secTwoNavBar .secTwoMenuList {
+    /* display: none; */
+    flex-wrap: nowrap;
+    background-color: var(--text-white-color);
+    width: 100%;
+    padding: 8px 0;
+    position: absolute;
+    margin-left: 50px;
+    /* margin-top: 150px; */
+    transform: translateX(-200%);
+    transition: all .4s ease-in-out;
+    z-index: 100;
+  }
+  .sectionTwo .secTwoNavBar .secTwoMenuList > div {
+    color: var(--text-color);
+    /* display: flex;
+    justify-content: center; */
+  }
+  .sectionTwo nav .secTwoNavBar .secTwoHamburger {
+    display: block;
+  }
+  .sectionTwo .secTwoMenuList .secTwo_V div div {
+    display: block;
+  }
+  .secThreeImageContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .secThreeImageContainer img {
+    margin: auto;
+  }
+}
+
+@media (max-width: 870px) {
+  .sectionOne .secOneRight img {
+    width: 400px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 850px) {
+  .sectionOne .secOneRight img {
+    width: 400px;
+    height: 350px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 787px) {
+  .sectionTwo .secTwoNavBar .secTwoMenuList > div {
+    font-size: 12px;
+    padding: 15px;
+  }
+  .secSixImage {
+    width: 500px;
+    height: auto;
+  }
+  .secSixImage img {
+    width: 100%;
+  }
+  .sectionFooter .secFootLeft img {
+    width: 50px;
+  }
+  .sectionFooter .secFootLeft p {
+    font-size: 70%;
+  }
+  .sectionFooter .secFootRight a h3 {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 695px) {
+  .sectionOne {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sectionOne button {
+    margin-top: 30px;
+  }
+  .sectionOne .secOneRight img {
+    margin-top: 10px;
+  }
+  .secSixFootOne {
+    flex-wrap: wrap;
+  }
+  .secSixFootOne div {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 620px) {
+  .sectionTwo .secTwoNavBar .secTwoMenuList > div {
+    font-size: 11px;
+    padding: 10px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .container {
+    padding: 0 10px;
+    margin: auto;
+  }
+  .secTwoContact .secTwoImgContainer .boxCol1 .box1, .box2 {
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  
+  .secTwoContact .secTwoImgContainer .boxCol2 .box1, .box2 {
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  
+  .secTwoContact .secTwoImgContainer .boxCol3 .box1, .box2 {
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .secSixContact {
+    margin: 50px;
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 530px) {
+  .sectionOne .secOneRight img {
+    margin: auto;
+  }
+  .secSixContact .secSixForm form input,.secSixContact .secSixForm form textarea {
+    width: 180%;
+  }
+  .sectionFooter {
+    height: 110px;
+  }
+}
+
+@media (max-width: 440px) {
+  .sectionFooter {
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .sectionOne .secOneRight img {
+    width: 300px;
+    height: 250px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 390px) {
+  /* .sectionTwo .secTwoNavBar .secTwoMenuList {
+    transform: translateX(200%);
+  } */
+}
